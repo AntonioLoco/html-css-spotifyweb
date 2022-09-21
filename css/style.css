@@ -58,6 +58,11 @@ html{
     margin: 0 auto;
 }
 
+.big-container{
+    width: 95%;
+    margin: 0 auto;
+}
+
 /* Buttons */
 .btn{
     display: inline-block;
@@ -112,6 +117,27 @@ html{
     margin-right: .5em;
 }
 
+/* Card List Style */
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin-top: 2em;
+}
+
+.card-item{
+    width: calc(100% / 6 - 1em);
+    text-align: center;
+}
+
+.card-item h3{
+    margin: 1em 0 .5em;
+}
+
+.card-item p{
+    font-size: 1rem;
+    color: var(--grey-light);
+}
 /* ------------------------------------------------ */
 /* SIDEBAR */
 .sidebar{
@@ -223,6 +249,8 @@ html{
     margin: 0 1em 2em;
     color: var(--grey-light);
 }
+
+/* Section recent played */
 
 
 

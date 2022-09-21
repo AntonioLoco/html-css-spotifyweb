@@ -2,14 +2,26 @@
 Small Desktop Screen - 1100px 
 */
 @media screen and (max-width: 1100px) {
-    
+   /* COMMON */
+   /* Card List Style */
+    .card-item{
+        width: calc(100% / 4 - 1em);
+        text-align: center;
+    }
+
+
 }
 
 /* 
 Tablet Screen - 700px 
 */
 @media screen and (max-width: 700px) {
-    
+       /* COMMON */
+   /* Card List Style */
+   .card-item{
+    width: calc(100% / 2 - 1em);
+    text-align: center;
+}
 }
 
 /* 
