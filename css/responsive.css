@@ -16,5 +16,10 @@ Tablet Screen - 700px
 Phone Screen - 600px
 */
 @media screen and (max-width: 600px) {
-    
+    /* COMMON */
+    /* Variables */
+    :root{
+        /* Measurable */
+        --sidebar-width: 50px;
+    }
 }

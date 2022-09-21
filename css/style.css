@@ -44,7 +44,11 @@ html{
 .content{
     width: calc(100% - var(--sidebar-width));
     height: calc(100vh - var(--playerbar-height));
+    overflow: auto;
     background-color: var(--blue-dark);
+
+    /* DEBUG */
+    color: white;
 }
 
 .player-bar{
