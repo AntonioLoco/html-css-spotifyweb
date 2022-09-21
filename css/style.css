@@ -135,6 +135,7 @@ html{
 
 /* Main Sidebar*/
 .main-sidebar{
+    height: calc(100% - 100px);
     color: var(--grey-light);
 }
 
