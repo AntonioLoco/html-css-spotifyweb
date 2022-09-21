@@ -21,11 +21,39 @@ Phone Screen - 600px
     :root{
         /* Measurable */
         --sidebar-width: 50px;
-        --padding-gap-sidebar: .5em;
+        --margin-gap-sidebar: 1em;
+    }
+
+    /* Buttons */
+    /* Button Download */
+    #btn-download{
+        border-bottom: none;
+        justify-content: center;
+    }
+
+    #btn-download span{
+        display: none;
+    }
+
+    /* Button Profile */
+    #btn-profile{
+        justify-content: center;
+    }
+
+    #btn-profile h4{
+        display: none;
+    }
+
+    #photo-user img{
+        margin: 0;
     }
 
     /* SIDEBAR */
-    /* Header */
+    /* Header Sidebar*/
+    .header-sidebar{
+        margin-top: .5em;
+    }
+
     /* logo */
     #big-logo{
         display: none;
@@ -35,9 +63,21 @@ Phone Screen - 600px
         display: block;
     }
 
-    /* Main */
+    /* Main Sidebar*/
     /* menu */
     .main-sidebar li span{
         display: none;
     }
+
+    .main-sidebar .sidebar-menu li{
+        justify-content: center;
+    }
+
+    /* playlist */
+    .main-sidebar .sidebar-playlist{
+        display: none;
+    }
+
+    /* Footer Sidebar */
+    
 }

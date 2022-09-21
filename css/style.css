@@ -14,6 +14,11 @@ ul{
     list-style-type: none;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 /* COMMON */
 html{
     font-size: 100%;
@@ -24,7 +29,7 @@ html{
 :root{
     /* Palette */
     --grey-dark: #282828;
-    --grey-light: #D2D2D2;
+    --grey-light: #A3A3A3;
     --blue-dark: #141922;
     --green-light: #ADFF2F;
 
@@ -36,8 +41,8 @@ html{
     --playerbar-height: 150px;
     --sidebar-width: 250px;
 
-    /* Padding */
-    --padding-gap-sidebar: 1.5rem;
+    /* Margin */
+    --margin-gap-sidebar: 1.5rem;
 }
 
 /* Layout */
@@ -48,18 +53,76 @@ html{
     flex-wrap: wrap;
 }
 
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Buttons */
+/* Button add Playlist */
+#btn-add-playlist{
+    display: flex;
+    align-items: center;
+}
+
+#btn-add-playlist i{
+    font-size: 2.5em;
+    margin-right: .5rem;
+}
+
+/* Button download */
+#btn-download{
+    color: var(--grey-light);
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--grey-light);
+    padding-bottom: .5em;
+}
+
+#btn-download img{
+    width: 25px;
+    margin-right: .5em;
+}
+
+/* Button User Profile*/
+#btn-profile{
+    display: flex;
+    align-items: center;
+    margin-top: var(--margin-gap-sidebar);
+}
+
+#btn-profile h4{
+    color: var(--white);
+}
+
+#photo-user img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: grey;
+    margin-right: .5em;
+}
+
 /* ------------------------------------------------ */
 /* SIDEBAR */
 .sidebar{
     width: var(--sidebar-width);
     height: calc(100% - var(--playerbar-height));
     background-color: var(--black);
+
+    /* DEBUG */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-/* Header */
+/* Header Sidebar*/
 /* logo */
 .header-sidebar{
-    padding: var(--padding-gap-sidebar);
+    height: 100px;
+    display: flex;
+    align-items: center;
 }
 
 #big-logo{
@@ -70,16 +133,17 @@ html{
     display: none;
 }
 
-/* Main */
-/* menu */
+/* Main Sidebar*/
 .main-sidebar{
+    height: calc(100% - 200px);
     color: var(--grey-light);
 }
 
+/* menu */
 .main-sidebar .sidebar-menu li{
     display: flex;
     align-items: center;
-    padding: .5em var(--padding-gap-sidebar);
+    margin-top: 1em;
 }
 
 .main-sidebar .sidebar-menu img{
@@ -87,33 +151,30 @@ html{
 }
 
 /* playlist */
+.main-sidebar .sidebar-playlist{
+    margin-top: var(--margin-gap-sidebar);
+}
 
+#title-playlist{
+    color: var(--white);
+    margin-bottom: .5em;
+}
 
+.main-sidebar .sidebar-playlist ul li{
+    margin-top: 1em;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Footer Sidebar */
+.footer-sidebar{
+    height: 100px;
+    display: flex;
+    align-items: flex-end;
+}
 
 /* CONTENT */
 .content{
     width: calc(100% - var(--sidebar-width));
     height: calc(100vh - var(--playerbar-height));
-    padding: var(--padding-gap);
     overflow: auto;
     background-color: var(--blue-dark);
 
@@ -125,6 +186,5 @@ html{
 .player-bar{
     width: 100%;
     height: var(--playerbar-height);
-    padding: var(--padding-gap);
     background-color: var(--grey-dark);    
 }
