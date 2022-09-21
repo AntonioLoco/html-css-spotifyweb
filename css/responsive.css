@@ -21,5 +21,23 @@ Phone Screen - 600px
     :root{
         /* Measurable */
         --sidebar-width: 50px;
+        --padding-gap-sidebar: .5em;
+    }
+
+    /* SIDEBAR */
+    /* Header */
+    /* logo */
+    #big-logo{
+        display: none;
+    }
+    
+    #small-logo{
+        display: block;
+    }
+
+    /* Main */
+    /* menu */
+    .main-sidebar li span{
+        display: none;
     }
 }

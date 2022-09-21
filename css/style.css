@@ -5,6 +5,15 @@
     box-sizing: border-box;
 }
 
+img{
+    max-width: 100%;
+    display: block;
+}
+
+ul{
+    list-style-type: none;
+}
+
 /* COMMON */
 html{
     font-size: 100%;
@@ -23,8 +32,12 @@ html{
     --black: #000000;
 
     /* Measurable */
+    /* Width e Heiht */
     --playerbar-height: 150px;
     --sidebar-width: 250px;
+
+    /* Padding */
+    --padding-gap-sidebar: 1.5rem;
 }
 
 /* Layout */
@@ -35,15 +48,72 @@ html{
     flex-wrap: wrap;
 }
 
+/* ------------------------------------------------ */
+/* SIDEBAR */
 .sidebar{
     width: var(--sidebar-width);
     height: calc(100% - var(--playerbar-height));
     background-color: var(--black);
 }
 
+/* Header */
+/* logo */
+.header-sidebar{
+    padding: var(--padding-gap-sidebar);
+}
+
+#big-logo{
+    max-width: 80%;
+}
+
+#small-logo{
+    display: none;
+}
+
+/* Main */
+/* menu */
+.main-sidebar{
+    color: var(--grey-light);
+}
+
+.main-sidebar .sidebar-menu li{
+    display: flex;
+    align-items: center;
+    padding: .5em var(--padding-gap-sidebar);
+}
+
+.main-sidebar .sidebar-menu img{
+    width: 30px;
+}
+
+/* playlist */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CONTENT */
 .content{
     width: calc(100% - var(--sidebar-width));
     height: calc(100vh - var(--playerbar-height));
+    padding: var(--padding-gap);
     overflow: auto;
     background-color: var(--blue-dark);
 
@@ -51,8 +121,10 @@ html{
     color: white;
 }
 
+/* PLAYER BAR */
 .player-bar{
     width: 100%;
     height: var(--playerbar-height);
+    padding: var(--padding-gap);
     background-color: var(--grey-dark);    
 }
