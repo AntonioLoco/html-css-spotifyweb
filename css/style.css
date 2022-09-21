@@ -114,7 +114,7 @@ html{
     /* DEBUG */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 /* Header Sidebar*/
@@ -135,7 +135,6 @@ html{
 
 /* Main Sidebar*/
 .main-sidebar{
-    height: calc(100% - 200px);
     color: var(--grey-light);
 }
 
@@ -167,8 +166,6 @@ html{
 /* Footer Sidebar */
 .footer-sidebar{
     height: 100px;
-    display: flex;
-    align-items: flex-end;
 }
 
 /* CONTENT */
