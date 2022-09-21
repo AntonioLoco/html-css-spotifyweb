@@ -49,11 +49,6 @@ Phone Screen - 600px
     }
 
     /* SIDEBAR */
-    /* Header Sidebar*/
-    .header-sidebar{
-        margin-top: .5em;
-    }
-
     /* logo */
     #big-logo{
         display: none;
