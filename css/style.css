@@ -25,6 +25,10 @@ html{
     font-family: 'Montserrat', sans-serif;
 }
 
+section{
+    margin: var(--margin-gap-section) 0;
+}
+
 /* Variables */
 :root{
     /* Palette */
@@ -43,6 +47,7 @@ html{
 
     /* Margin */
     --margin-gap-sidebar: 1.5rem;
+    --margin-gap-section: 5rem;
 }
 
 /* Layout */
@@ -137,6 +142,12 @@ html{
 .card-item p{
     font-size: 1rem;
     color: var(--grey-light);
+}
+
+/* Style suggestion of playlist */
+#suggestion{
+    color: var(--grey-light);
+    margin-top: .5em; 
 }
 /* ------------------------------------------------ */
 /* SIDEBAR */
@@ -250,14 +261,11 @@ html{
     color: var(--grey-light);
 }
 
-/* Section recent played */
-
-
-
-
-
-
-
+/* Section Popular artist */
+#popular-artist .card-item img{
+    border-radius: 50%;
+    object-fit: contain;
+}
 
 
 
