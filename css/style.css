@@ -146,6 +146,30 @@ section{
     color: var(--grey-light);
 }
 
+.card-item .copertina{
+    position: relative;
+}
+
+.card-item .copertina::after{
+    content: '\f144';
+    font-family: "Font Awesome 6 free";
+    font-size: 4rem;
+    color: white;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card-item .copertina:hover img{
+    opacity: .5;
+}
+
+.card-item .copertina:hover::after{
+    display: block;
+}
+
 /* Style suggestion of playlist */
 #suggestion{
     color: var(--grey-light);
@@ -231,15 +255,12 @@ section{
     color: white;
 }
 
-
 /* CONTENT */
 .content{
     width: calc(100% - var(--sidebar-width));
     height: calc(100vh - var(--playerbar-height));
     overflow: auto;
     background-color: var(--blue-dark);
-
-    /* DEBUG */
     color: white;
 }
 
@@ -257,6 +278,11 @@ section{
     position: fixed;
     top: 0;
     right: 0;
+}
+
+/* Header Hover */
+#header-content a.btn:hover{
+    transform: scale(1.1);
 }
 
 /* Main */
@@ -277,13 +303,25 @@ section{
     color: var(--grey-light);
 }
 
+#main-content .main-nav ul li:first-child::after{
+    content: "";
+    display: block;
+    width: 35px;
+    height: 2px;
+    margin: .2em auto 0;
+    background-color: var(--green-light);
+}
+
+/* navigation Hover */
+#main-content .main-nav ul li:hover{
+    color: white;
+}
+
 /* Section Popular artist */
 #popular-artist .card-item img{
     border-radius: 50%;
     object-fit: contain;
 }
-
-
 
 /* PLAYER BAR */
 .player-bar{
