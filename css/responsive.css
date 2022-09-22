@@ -15,12 +15,10 @@ Tablet Screen - 700px
 */
 @media screen and (max-width: 700px) {
     /* COMMON */
-    /* Variables */
     :root{
         /* Measurable */
         --player-album-volume-widht: 160px;
     }
-
    /* Card List Style */
    .card-item{
     width: calc(100% / 2 - 1em);
@@ -29,12 +27,6 @@ Tablet Screen - 700px
 
 
     /* PLAYER BAR */
-    /* Player Album */
-    .player-album .action{
-        flex-direction: column;
-        justify-content: center;
-    }
-
     /* Player volume */
     .player-volume .icon{
         width: calc((100% - 70px - 1em));

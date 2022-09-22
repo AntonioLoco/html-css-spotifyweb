@@ -45,7 +45,7 @@ section{
     --playerbar-height: 100px;
     --sidebar-width: 250px;
     --header-content-hight: 80px;
-    --player-album-volume-widht: 250px;
+    --player-album-volume-widht: 200px;
 
 
     /* Margin */
@@ -325,6 +325,8 @@ section{
 
 .player-album .action{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
@@ -346,11 +348,11 @@ section{
 
 /* TOP */
 .player-actions .actions-top{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .player-actions .actions-top i{
-    padding: .5rem;
+    padding: .4rem;
 }
 
 /* BOTTOM */
