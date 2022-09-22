@@ -8,20 +8,56 @@ Small Desktop Screen - 1100px
         width: calc(100% / 4 - 1em);
         text-align: center;
     }
-
-
 }
 
 /* 
 Tablet Screen - 700px 
 */
 @media screen and (max-width: 700px) {
-       /* COMMON */
+    /* COMMON */
+    /* Variables */
+    :root{
+        /* Measurable */
+        --player-album-volume-widht: 160px;
+    }
+
    /* Card List Style */
    .card-item{
     width: calc(100% / 2 - 1em);
     text-align: center;
-}
+   }
+
+
+    /* PLAYER BAR */
+    /* Player Album */
+    .player-album .action{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* Player volume */
+    .player-volume .icon{
+        width: calc((100% - 70px - 1em));
+        height: 100%;
+        font-size: 1em;
+        color: var(--grey-light);
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    
+    
+    .player-volume .volume-bar{
+        width: 70px;
+        height: 5px;
+        background-color: var(--grey-light);
+        margin-right: 1em;
+    }
+
+    .player-volume .icon i{
+        padding: 0.2em;
+    }
+        
 }
 
 /* 
@@ -34,6 +70,7 @@ Phone Screen - 600px
         /* Measurable */
         --sidebar-width: 50px;
         --margin-gap-sidebar: 1em;
+    
     }
 
     /* Buttons */
@@ -84,7 +121,5 @@ Phone Screen - 600px
     .main-sidebar .sidebar-playlist{
         display: none;
     }
-
-    /* Footer Sidebar */
     
 }
