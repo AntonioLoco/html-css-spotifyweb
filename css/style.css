@@ -47,7 +47,6 @@ section{
     --header-content-hight: 80px;
     --player-album-volume-widht: 200px;
 
-
     /* Margin */
     --margin-gap-sidebar: 1.5rem;
     --margin-gap-section: 3rem;
@@ -221,6 +220,17 @@ section{
     height: 100px;
 }
 
+/* Sidebar Hover */
+.main-sidebar ul li:hover{
+    color: white;
+    cursor: pointer;
+}
+
+#btn-add-playlist:hover,
+#btn-download:hover{
+    color: white;
+}
+
 
 /* CONTENT */
 .content{
@@ -348,6 +358,7 @@ section{
 
 /* TOP */
 .player-actions .actions-top{
+    display: flex;
     font-size: 1.5rem;
 }
 
